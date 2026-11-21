@@ -1,0 +1,63 @@
+name: Bug report / Informar de un error
+description: Report a reproducible problem / Describe un problema reproducible
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and Spanish are welcome. Remove personal data, serial numbers and full HID paths from attachments.
+        Puedes escribir en español o inglés. Elimina datos personales, números de serie y rutas HID completas de los adjuntos.
+  - type: input
+    id: version
+    attributes:
+      label: App version / Versión de AULA
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: keyboard
+    attributes:
+      label: Exact keyboard model / Modelo exacto del teclado
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection / Conexión
+      options:
+        - USB
+        - 2.4 GHz
+        - Bluetooth
+        - Other or unknown / Otra o desconocida
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version / Versión de Windows
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Pasos para reproducir
+      description: Include effect and knob settings if relevant / Incluye efecto y configuración de la perilla si corresponde
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / Resultado observado
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or extra context / Capturas o contexto adicional

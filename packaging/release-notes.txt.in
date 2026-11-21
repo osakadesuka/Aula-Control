@@ -1,0 +1,61 @@
+AULA Control @VERSION@ - Windows x64
+
+ESPAÑOL
+
+Utilidad independiente para la unidad EPOMAKER EA75 / AULA F75 comprobada en
+este proyecto. No es software oficial del fabricante. Incluye iluminación por
+USB y receptor 2.4 GHz, perfiles, vista previa, batería inalámbrica, gestos
+multimedia y funcionamiento en bandeja. Interfaz en español e inglés.
+
+Compatibilidad: Windows 10 2004 o posterior, x64, con controlador gráfico
+compatible con Vulkan. El control RGB y la batería por Bluetooth no están
+implementados. La batería no está disponible por USB. Otras variantes de
+teclado requieren comprobar sus identificadores y protocolo por separado.
+
+AVISO DE FIRMA Y SMARTSCREEN
+Esta versión no tiene firma digital. Windows puede mostrar un aviso de
+SmartScreen o de editor desconocido; algunas políticas del equipo pueden
+impedir su ejecución. Descarga el instalador de esta publicación y compara
+su SHA256 con el publicado aquí o en el archivo .sha256 adjunto. El hash
+permite comprobar que el archivo coincide; no sustituye una firma digital.
+
+Para consultar el hash en PowerShell, desde la carpeta de descarga:
+Get-FileHash -Algorithm SHA256 .\@INSTALLER@
+
+Instala para el usuario actual y crea Inicio > AULA Control. Actualizar y
+desinstalar conserva los perfiles y preferencias en %LOCALAPPDATA%\AulaControl.
+Para cerrar la aplicación usa Salir de AULA Control desde la bandeja o
+Preferencias; la X puede ocultarla.
+
+ENGLISH
+
+Independent utility for the EPOMAKER EA75 / AULA F75 unit verified in this
+project. Not official manufacturer software. Includes lighting over USB and
+the 2.4 GHz receiver, profiles, preview, wireless battery information,
+multimedia gestures and tray operation. Spanish and English interface.
+
+Requirements: Windows 10 version 2004 or later, x64, and a Vulkan-capable
+graphics driver. Bluetooth RGB/battery control is not implemented. Battery
+information is unavailable over USB. Other keyboard variants require separate
+device identification and protocol verification.
+
+SIGNATURE AND SMARTSCREEN NOTICE
+This release is not digitally signed. Windows may display a SmartScreen or
+unknown publisher warning; device policies may prevent it from running.
+Download the installer from this release and compare its SHA256 with the
+value below or the attached .sha256 file. The hash checks that the file
+matches the published artifact; it does not replace a digital signature.
+
+To display the hash in PowerShell, from the download folder:
+Get-FileHash -Algorithm SHA256 .\@INSTALLER@
+
+Setup installs for the current user and creates Start > AULA Control.
+Updating or uninstalling preserves profiles and preferences in
+%LOCALAPPDATA%\AulaControl. To quit, choose Exit AULA Control from the tray
+menu or Settings; closing the window may only hide it.
+
+FILE / ARCHIVO: @INSTALLER@
+SHA256: @SHA256@
+
+Microsoft SmartScreen information / Información de Microsoft:
+https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation
